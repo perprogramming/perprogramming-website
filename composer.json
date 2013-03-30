@@ -1,0 +1,14 @@
+{
+    "name": "perprogramming/perprogramming.github.com",
+    "description": "My website",
+    "authors": [
+        {
+            "name": "perprogramming",
+            "email": "info@perprogramming.de"
+        }
+    ],
+    "require-dev": {
+	"farazdagi/phrozn": "0.5.*"
+    },
+    "minimum-stability": "dev"
+}
