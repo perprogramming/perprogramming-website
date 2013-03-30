@@ -8,7 +8,10 @@
         }
     ],
     "require-dev": {
-	"farazdagi/phrozn": "0.5.*"
-    },
-    "minimum-stability": "dev"
+        "sculpin/sculpin": "2.*@dev",
+
+        "dflydev/embedded-composer": "@dev",
+        "michelf/php-markdown": "@beta",
+        "composer/composer": "@dev"
+    }
 }
