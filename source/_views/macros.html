@@ -8,6 +8,21 @@
             {% if event.location is defined %}{{ event.location }}<br />{% endif %}
             {% if event.speakers is defined %}<small>Speakers: i.a. {{ event.speakers | join(', ') }}</small><br />{% endif %}
             {% if event.description is defined %}{{ event.description }}<br />{% endif %}
+            {% if event.projects is defined %}
+                <br />
+                Interesting projects:<br /><br />
+                <ul>
+                    {% for project in event.projects %}
+                        <li>
+                            <a href="{{ project.url }}">{{ project.title }}</a><br />
+                            {{ project.description }}<br />
+                            Project started: {{ project.start }}<br />
+                            {% if project.keywords %}Keywords: {% for keyword in project.keywords %}<em>{{ keyword }}</em>{% if not loop.last %}, {% endif %}{% endfor %}<br />{% endif %}
+                            <br />
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         {% endset %}
         {{ _self.definition(term, definition) }}
     {% endfor %}
