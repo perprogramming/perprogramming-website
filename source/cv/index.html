@@ -49,6 +49,11 @@ use:
                     {{ macros.definition('Address', definition) }}
 
                     {{ macros.definition('Phone', '+4916094949894') }}
+
+                    {% set definition %}
+                        <a href="mailto:info@perprogramming.de">info@perprogramming.de</a>
+                    {% endset %}
+                    {{ macros.definition('Email', definition) }}
                 </div>
 
                 <div class="tab-pane" id="professionalExperience">
