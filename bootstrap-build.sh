@@ -1,6 +1,9 @@
+#!/bin/bash
+
 echo "Building bootstrap..."
 
 rm -rf app/cache/bootstrap
+mkdir -p app/cache
 cp -r vendor/twitter/bootstrap app/cache/bootstrap
 
 cd app/cache/bootstrap
