@@ -1,0 +1,44 @@
+---
+furtherEducation: true
+---
+-
+    date: 10.2005-02.2006
+    title: CCNA 1 Network Basics
+    location: HHB Bonn
+-
+    date: 03.2006-07.2006
+    title: CCNA 2 Router and Routing Basics
+    location: HHB Bonn
+-
+    date: 04.2007-08.2007
+    title: CCNA 3 Switching Basics and Intermediate Routing
+    location: HHB Bonn
+-
+    date: 01.2008-06.2008
+    title: CCNA 4 WAN Technologies
+    location: HHB Bonn
+-
+    date: 29.06.2007
+    title: The Secret of Effective Teams: Agile, Discipline, Focus
+    trainer: Alistair Cockburn
+    location: Bonn
+-
+    date: 01.03.2010
+    title: Advanced Javascript
+    trainer: Paul Bakaus
+    location: Wiesbaden
+-
+    date: 08.03.2011
+    title: Designing Software, Drawing Pictures
+    trainer: Simon Brown
+    location: London
+-
+    date: 20.10.2011
+    title: Build your own framework... based on the Symfony2 components
+    trainer: Fabien Potencier
+    location: Cologne
+-
+    date: 05.09.2012
+    title: Creating Mobile apps with jQuery Mobile
+    trainer: Maximiliano Firtman
+    location: London

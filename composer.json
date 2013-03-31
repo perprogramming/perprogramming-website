@@ -1,17 +1,24 @@
 {
-    "name": "perprogramming/perprogramming.github.com",
+    "name": "perprogramming/perprogramming-website",
     "description": "My website",
     "authors": [
         {
-            "name": "perprogramming",
+            "name": "Per Bernhardt",
             "email": "info@perprogramming.de"
         }
     ],
-    "require-dev": {
+    "require": {
         "sculpin/sculpin": "2.*@dev",
+        "twitter/bootstrap": "2.3.*",
 
         "dflydev/embedded-composer": "@dev",
         "michelf/php-markdown": "@beta",
         "composer/composer": "@dev"
+    },
+    "scripts": {
+        "post-install-cmd": "./bootstrap-build.sh"
+    },
+    "autoload": {
+        "psr-0": {"": "src/"}
     }
 }

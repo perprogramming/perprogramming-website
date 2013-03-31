@@ -1,0 +1,73 @@
+---
+conferenceAttendances: true
+---
+-
+    date: 07.-08.11.2006
+    title: International PHP Conference 2006
+    location: Frankfurt
+    speakers: [Johann-Peter Hartmann, Derick Rethans, Dustin Whittle]
+-
+    date: 06.-07.11.2007
+    title: International PHP Conference 2007
+    location: Frankfurt
+    speakers: [Sebastian Bergmann, Johann-Peter Hartmann, Robert Lemke, Fabien Potencier, Derick Rethans, Lukas Smith, Dustin Whittle]
+-
+    date: 23.-24.08.2008
+    title: Froscon 2008
+    location: HS Bonn-Rhein-Sieg, Sankt Augustin
+    speakers: [Sebastian Bergmann, Rasmus Lerdorf, Derick Rethans, Andrew S. Tanenbaum]
+-
+    date: 28.-30.10.2008
+    title: International PHP Conference 2008
+    location: Mainz
+    speakers: [Sebastian Bergmann, Johann-Peter Hartmann, Robert Lemke, Fabien Potencier, Derick Rethans, David Zülke]
+-
+    date: 11.-13.03.2009
+    title: QCon London 2009
+    location: London
+    speakers: [Ola Bini, Eric Evans, Martin Fowler, Kevlin Henney, Tony Hoare, Dan North]
+-
+    date: 05.-06.11.2009
+    title: Fronteers 2009
+    location: Amsterdam
+    speakers: [Douglas Crockford, Christian Heilmann, Peter-Paul Koch, John Resig, Nicole Sullivan]
+-
+    date: 10.-12.03.2010
+    title: QCon London 2010
+    location: London
+    speakers: [Ola Bini, Eric Evans, Martin Fowler, Kevlin Henney, Dan North]
+-
+    date: 07.-08.10.2010
+    title: Fronteers 2010
+    location: Amsterdam
+    speakers: [Meagan Fisher, Christian Heilmann, Paul Irish, Jeremy Keith]
+-
+    date: 09.-11.03.2011
+    title: QCon London 2011
+    location: London
+    speakers: [Kevlin Henney, Craig Larman, Dan North]
+-
+    date: 30.05.-01.06.2011
+    title: International PHP Conference Spring 2011
+    location: Berlin
+    speakers: [Sebastian Bergmann, Jordi Boggiano, Benjamin Eberlei, Johann-Peter Hartmann, Christian Heilmann, Robert Lemke, Lukas Smith, Zeev Suraski, David Zuelke]
+-
+    date: 20.-21.08.2011
+    title: Froscon 2011
+    location: HS Bonn-Rhein-Sieg, Sankt Augustin
+    speakers: [Sebastian Bergmann, Benjamin Eberlei, Derick Rethans]
+-
+    date: 21.10.2011
+    title: Symfony Day Cologne 2011
+    location: Cologne
+    speakers: Fabien Potencier, Marc Weistroff, Igor Wiedler
+-
+    date: 07.-09.03.2012
+    title: QCon London 2012
+    location: London
+    speakers: [Ola Bini, Martin Fowler, Dan North]
+-
+    date: 22.-23.11.2012
+    title: Symfony Live Berlin 2012
+    location: Berlin
+    speakers: [Benjamin Eberlei, Johann Peter Hartmann, Fabien Potencier, David Zülke]

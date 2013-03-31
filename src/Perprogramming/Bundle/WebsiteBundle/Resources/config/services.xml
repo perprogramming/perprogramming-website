@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="perprogramming_website.education_data_provider" class="Perprogramming\Bundle\WebsiteBundle\DataProvider\YamlFileDataProvider">
+            <argument>education</argument>
+            <tag name="sculpin.data_provider" alias="education" />
+            <tag name="kernel.event_subscriber" />
+        </service>
+        <service id="perprogramming_website.further_education_data_provider" class="Perprogramming\Bundle\WebsiteBundle\DataProvider\YamlFileDataProvider">
+            <argument>furtherEducation</argument>
+            <tag name="sculpin.data_provider" alias="furtherEducation" />
+            <tag name="kernel.event_subscriber" />
+        </service>
+        <service id="perprogramming_website.conference_attendances_data_provider" class="Perprogramming\Bundle\WebsiteBundle\DataProvider\YamlFileDataProvider">
+            <argument>conferenceAttendances</argument>
+            <tag name="sculpin.data_provider" alias="conferenceAttendances" />
+            <tag name="kernel.event_subscriber" />
+        </service>
+    </services>
+</container>

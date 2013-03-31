@@ -1,21 +1,18 @@
 {
-    "hash": "512b779a2bc193f65563d2a938dc6afa",
+    "hash": "ff2131ac13320efe0abe5571b0753518",
     "packages": [
-
-    ],
-    "packages-dev": [
         {
             "name": "composer/composer",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "bf307de1d6f0c71e430c86c753964afa4e2ea540"
+                "reference": "e1eb35455f69ebae5d8cd0914d7e2b450f750cd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/bf307de1d6f0c71e430c86c753964afa4e2ea540",
-                "reference": "bf307de1d6f0c71e430c86c753964afa4e2ea540",
+                "url": "https://api.github.com/repos/composer/composer/zipball/e1eb35455f69ebae5d8cd0914d7e2b450f750cd8",
+                "reference": "e1eb35455f69ebae5d8cd0914d7e2b450f750cd8",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +68,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2013-03-28 19:42:25"
+            "time": "2013-03-31 12:18:56"
         },
         {
             "name": "dflydev/ant-path-matcher",
@@ -2254,7 +2251,37 @@
                 "templating"
             ],
             "time": "2013-02-09 18:21:53"
+        },
+        {
+            "name": "twitter/bootstrap",
+            "version": "v2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twitter/bootstrap.git",
+                "reference": "v2.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twitter/bootstrap/zipball/v2.3.1",
+                "reference": "v2.3.1",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "http://twitter.github.com/bootstrap/",
+            "keywords": [
+                "bootstrap",
+                "css"
+            ],
+            "time": "2013-03-01 05:24:27"
         }
+    ],
+    "packages-dev": [
+
     ],
     "aliases": [
 

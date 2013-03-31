@@ -1,0 +1,112 @@
+---
+layout: default
+title: Curriculum Vitae
+activeNav: cv
+use:
+    - education
+    - furtherEducation
+    - conferenceAttendances
+---
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h1 class="offset2">{{ page.title }}</h1>
+    </div>
+    <br />
+    <div class="row-fluid">
+        <div class="tabbable tabs-left">
+            <ul class="span2 nav nav-tabs">
+                <li class="active"><a href="#personalDetails" data-toggle="tab">Personal Details</a></li>
+                <li><a href="#education" data-toggle="tab">Education</a></li>
+                <li><a href="#professionalExperience" data-toggle="tab">Professional Experience</a></li>
+                <li><a href="#furtherEducation" data-toggle="tab">Further Education</a></li>
+                <li><a href="#conferenceAttendances" data-toggle="tab">Conference Attendances</a></li>
+                <li><a href="#extraProfessionalActivities" data-toggle="tab">Extra-professional Activities</a></li>
+                <li><a href="#miscellaneous" data-toggle="tab">Miscellaneous</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="personalDetails">
+                    {% set definition %}
+                        <img src="/img/per-real.png" alt="Per Bernhardt" />
+                    {% endset %}
+                    {{ _self.definition('', definition) }}
+
+                    {{ _self.definition('Name', 'Per Bernhardt') }}
+
+                    {{ _self.definition('Born on', '27.04.1984, Siegburg, Germany') }}
+
+                    {{ _self.definition('Gender', 'male') }}
+
+                    {{ _self.definition('Nationality', 'German') }}
+
+                    {% set definition %}
+                        Schumannstraße 115<br />
+                        53113 Bonn<br />
+                        Germany
+                    {% endset %}
+                    {{ _self.definition('Address', definition) }}
+
+                    {{ _self.definition('Phone', '+4916094949894') }}
+                </div>
+
+                <div class="tab-pane" id="education">
+                    {{ _self.events(data.education | reverse) }}
+                </div>
+
+                <div class="tab-pane" id="professionalExperience">
+                </div>
+
+                <div class="tab-pane" id="furtherEducation">
+                    {{ _self.events(data.furtherEducation | reverse) }}
+                </div>
+
+                <div class="tab-pane" id="conferenceAttendances">
+                    {{ _self.events(data.conferenceAttendances | reverse) }}
+                </div>
+
+                <div class="tab-pane" id="extraProfessionalActivities">
+
+                </div>
+
+                <div class="tab-pane" id="miscellaneous">
+                    {{ _self.definitionList('Languages', ['German (native)', 'English (fluent)']) }}
+                    {{ _self.definitionList('Interests', ['Foosball', 'Hiking']) }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% macro events(events) %}
+    {% for event in events %}
+        {% set term = event.date %}
+        {% set definition %}
+            <strong>{{ event.title }}</strong><br />
+            {% if event.trainer is defined %}Trainer: {{ event.trainer }}<br />{% endif %}
+            {% if event.location is defined %}{{ event.location }}<br />{% endif %}
+            {% if event.speakers is defined %}<small>Speakers: i.a. {{ event.speakers | join(', ') }}</small><br />{% endif %}
+            {% if event.description is defined %}{{ event.description }}<br />{% endif %}
+        {% endset %}
+        {{ _self.definition(term, definition) }}
+    {% endfor %}
+{% endmacro %}
+
+{% macro definitionList(term, list) %}
+    {% set definition %}
+        <ul>
+            {% for item in list %}
+                <li>{{ item | raw }}</li>
+            {% endfor %}
+        </ul>
+    {% endset %}
+    {{ _self.definition(term, definition) }}
+{% endmacro %}
+
+{% macro definition(term, definition) %}
+    <dl class="dl-horizontal">
+        <dt>{{ term }}</dt>
+        <dd>{{ definition | raw }}</dd>
+    </dl>
+{% endmacro %}
+
+
+

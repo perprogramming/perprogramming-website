@@ -3,3 +3,5 @@
 /app/logs/
 /app/config/parameters.yml
 /output_*/
+/.idea/workspace.xml
+/source/bootstrap
