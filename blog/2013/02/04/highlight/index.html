@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Syntax Highlighting &mdash; perprogramming.de</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <a class="brand" href="/"><img src="/img/per-icon.png" width="17" alt="perprogramming" /> perprogramming</a>
+            <ul class="nav">
+                                                <li><a href="/blog/">Blog</a></li>
+                                <li><a href="/cv/">CV</a></li>
+                                <li><a href="/imprint/">Imprint</a></li>
+                            </ul>
+        </div>
+    </div>
+        <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span2">
+            </div>
+            <div class="span10">
+                <p>You're all programmers, right? And you're writing code snippets on your Sculpin
+powered blog? Yeah. So you want some highlighting with your static site generation?
+Here you go!</p>
+
+<pre><code>namespace Foo;
+
+/**
+ * Awesome Contrived Example.
+ */
+class Bar impliments BarInterface
+{
+    private $baz;
+
+    public function __construct(BazInterface $baz)
+    {
+        $this-&gt;baz = $baz;
+    }
+
+    public function doIt()
+    {
+        return $this-&gt;baz-&gt;do('it');
+    }
+}
+</code></pre>
+
+<p>Like this addition to the skeleton? You can thank for <a href="https://github.com/Pawka">@Pawka</a>
+for suggesting it. :)</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <p class="offset2">Status as of 31 March 2013 21:46</p>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
