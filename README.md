@@ -8,8 +8,10 @@ git clone https://github.com/perprogramming/perprogramming-website.git
 cd perprogramming-website
 curl -sS https://getcomposer.org/installer | php
 ./composer.phar install
-export SYMFONY__OUTPUT__DIR=/tmp/
-export SYMFONY__SECRET=someSecret
+echo "parameters:
+    secret: someSecret
+    output.dir: /tmp/
+" > app/config/parameters.yml
 vendor/bin/sculpin generate --server
 ```
 
