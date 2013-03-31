@@ -18,3 +18,5 @@ vendor/bin/sculpin generate --server
 After that you should be able to open the website with http://127.0.0.1:8000.
 
 The definition of the website is in the subdirectory "source".
+
+The final sources are generated to the directory "output.dir" defined in app/config/parameters.yml and can be hosted statically.
