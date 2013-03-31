@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>{{ page.title }} &mdash; {{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-</head>
-<body{% block bodyExtras %}{% endblock %}>
-<div class="container-fluid">
-    <div class="navbar">
-        <div class="navbar-inner">
-            <a class="brand" href="/"><img src="/img/per-icon.png" width="17" alt="perprogramming" /> perprogramming</a>
-            <ul class="nav">
-                {% set navigation = {
-                blog: {url: '/blog/', caption: 'Blog'},
-                cv: {url: '/cv/', caption: 'CV'},
-                imprint: {url: '/imprint/', caption: 'Imprint'}
-                } %}
-                {% for name,config in navigation %}
-                <li{% if page.activeNav == name %} class="active"{% endif %}><a href="{{ config.url }}">{{ config.caption }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
+{% extends "base" %}
+
+{% block layoutContent %}
     {% block content %}{% endblock %}
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <p class="offset2">Status as of {{ 'now' | date('d F Y H:i') }}</p>
-        </div>
-    </div>
-</div>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>
+{% endblock %}

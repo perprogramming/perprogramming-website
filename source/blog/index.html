@@ -2,13 +2,24 @@
 layout: default
 title: Blog
 activeNav: blog
+generator: pagination
+use:
+    - posts
 ---
+{% import "macros" as macros %}
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="span2">
         </div>
         <div class="span10">
             <h1>Blog</h1>
+            {% for post in data.posts %}
+                {% set definition %}
+                    <a href="{{ post.url }}"><strong>{{ post.title }}</strong></a><br />
+                    {{ post.data.get('teaser') }}
+                {% endset %}
+                {{ macros.definition(post.date | date('j F Y'), definition) }}
+            {% endfor %}
         </div>
     </div>
 </div>
