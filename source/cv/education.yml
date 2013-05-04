@@ -17,7 +17,12 @@ education: true
     location: Industrie- und Handelskammer Bonn/Rhein-Sieg, Germany
     description: Average grade: 2.0
 -
-    date: 2007 - present
+    date: 2007 - edc 2014
     title: Computer Science (B.Sc.)
     location: Bonn-Rhein-Sieg University of Applied Sciences, Sankt Augustin, Germany
     description: Special emphasis: Complex Software Systems
+-
+    date: 2013
+    title: SensioLabs Certified Symfony Developer
+    location: SensioLabs, Cologne, Germany
+    description: The SensioLabs Symfony2 Framework certification exam is an industry standard to help developers distinguish themselves and emphazise their skill towards IT companies
