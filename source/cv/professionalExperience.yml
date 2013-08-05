@@ -31,7 +31,7 @@ professionalExperience: true
             url: http://www.haus-venusberg.de
             start: 2002
 -
-    date: 2005 - present
+    date: 2005 - 2013
     title: Senior Software Developer
     location: webfactory GmbH, Bonn, Germany
     description: Development of webfactory's software platform and infrastructure; software analysis, architecture and design for long-term customer projects
@@ -66,3 +66,15 @@ professionalExperience: true
             keywords: [PHP, MySQL, Apache2, IIS, MSSQL, ZendFramework, Doctrine2]
             url: http://www.siz.de
             start: May 2011
+-
+    date: 2013 - present
+    title: Senior Software Developer
+    location: STARTPLATZ, Cologne, Germany
+    description: Consulting and Technical Support for startups in Cologne area
+    projects:
+        -
+            title: Golfpost
+            description:
+            keywords: [PHP, MySQL, Apache2, Wordpress => Symfony2]
+            url: https://www.golfpost.de
+            start: August 2013
