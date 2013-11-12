@@ -67,7 +67,7 @@ professionalExperience: true
             url: http://www.siz.de
             start: May 2011
 -
-    date: 2013 - present
+    date: 2013 - 2013
     title: Senior Software Developer
     location: STARTPLATZ, Cologne, Germany
     description: Consulting and Technical Support for startups in Cologne area
@@ -76,5 +76,17 @@ professionalExperience: true
             title: Golfpost
             description:
             keywords: [PHP, MySQL, Apache2, Wordpress => Symfony2]
-            url: https://www.golfpost.de
+            url: http://www.golfpost.de
             start: August 2013
+-
+    date: 2013 - present
+    title: Senior Software Developer
+    location: Chefkoch.de, Bonn, Germany
+    description: Backend development with a focus on migrating to Symfony2
+    projects:
+        -
+            title: Chefkoch
+            description:
+            keywords: [PHP, MySQL, Nginx, Symfony2, Solr, Doctrine2, Varnish]
+            url: http://www.chefkoch.de
+            start: 1998
