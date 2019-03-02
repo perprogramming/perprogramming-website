@@ -1,0 +1,60 @@
+-
+    date: 2013
+    title: Anwendungsintegration mit Edge Side Includes
+    location: Symfony User Group, Cologne
+    description: Talk on how to integrate different applications on HTTP level using Edge Side Includes
+    slides: https://www.slideshare.net/perprogramming/anwendungsintegration-mit-edge-side-includes-29350496
+-
+    date: 2014
+    title: Application Layer in PHP
+    location: Symfony User Group, Cologne
+    description: Talk on a possible way to implement "Layered Architecture" (Martin Fowler) in PHP / Symfony2.
+    slides: https://www.slideshare.net/perprogramming/application-layer-33335917
+-
+    date: 2014
+    title: Continuous Integration & Delivery with Bamboo
+    location: Chefkoch GmbH, Bonn
+    description: A short introduction to Continuous Integration and Continuous Delivery with Bamboo.
+    slides: https://www.slideshare.net/perprogramming/bamboo-32118880
+-
+    date: 2015
+    title: Microservice-Teststrategie mit Symfony2
+    location: Code Talks 2015, Hamburg
+    description: Talk on how to apply a teststrategy on microservices in PHP / Symfony2.
+    slides: https://www.slideshare.net/perprogramming/microservice-teststrategie-mit-symfony2
+-
+    date: 2015
+    title: Kubernetes: Wie Chefkoch.de mit Containern arbeitet
+    location: Symfony Live 2015, Berlin
+    description: A talk on how we introduced Docker & Kubernetes at Chefkoch.
+    slides: https://www.slideshare.net/perprogramming/kubernetes-wie-chefkochde-mit-containern-arbeitet
+-
+    date: 2016
+    title: kubernetes @ Chefkoch.de
+    location: Kubernetes Meetup, Cologne
+    description: A talk on how we introduced Docker & Kubernetes at Chefkoch.
+    slides: https://www.slideshare.net/perprogramming/kubernetes-chefkochde-kubernetes-meetup-cologne
+-
+    date: 2016
+    title: Umzug eines Hochlast-Dienstes
+    location: Code Talks 2016, Hamburg
+    description: A talk on how we moved a high traffic Solr-based site search from bare metal to containers running on Kubernetes.
+    slides: https://www.slideshare.net/perprogramming/umzug-eines-hochlastdienstes
+-
+    date: 2016
+    title: Chefkoch goes Drupal8
+    location: Code Talks 2016, Hamburg
+    description: A talk on how we migrated our editorial content from a self-written CMS to an open-source solution (Drupal).
+    slides: https://www.slideshare.net/perprogramming/chefkoch-goes-drupal8
+-
+    date: 2016
+    title: Contract Tests mit Pact
+    location: Microservice Meetup, Bonn
+    description: This talk shows how Contract Testing with Pact eases microservice development.
+    slides: https://www.slideshare.net/perprogramming/contract-tests-mit-pact
+-
+    date: 2017
+    title: Magazin-Relaunch bei Chefkoch
+    location: G+J Headquarters, Hamburg
+    description: A talk on how continuous delivery helped us migrating our editorial content into an open-source solution (Drupal) running on Kubernetes.
+    slides: https://www.slideshare.net/perprogramming/magazinrelaunch-bei-chefkoch

@@ -2,64 +2,604 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Welcome &mdash; perprogramming.de</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perprogramming.de</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-reboot.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid">
-    <div class="navbar">
-        <div class="navbar-inner">
-            <a class="brand" href="/"><img src="/img/per-icon.png" width="17" alt="perprogramming" /> perprogramming</a>
-            <ul class="nav">
-                                                                <li><a href="/blog/">Blog</a></li>
-                                <li><a href="/cv/">CV</a></li>
-                                <li><a href="/imprint/">Imprint</a></li>
-                            </ul>
-        </div>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="/img/per-icon.png"  width="30" height="30" class="d-inline-block align-top" alt="perprogramming" />
+            perprogramming
+        </a>
     </div>
         <div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span2">
-            <img src="/img/per-icon.png" width="150" alt="perprogramming" />
-        </div>
-        <div class="span10">
-            <div class="page-header">
-                <h1>Welcome to perprogramming</h1>
-                <p class="lead">My name is Per Bernhardt and I'm a software developer living in Bonn, Germany.</p>
+    <div class="row">
+        <h1 class="offset-md-2"></h1>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-3">
+            <div class="nav flex-column nav-pills mb-4" id="v-pills-tab" role="tablist">
+                <a class="nav-link active" href="#welcome" data-toggle="tab">Welcome</a>
+                <a class="nav-link" href="#personalDetails" data-toggle="tab">Personal Details</a>
+                <a class="nav-link" href="#professionalExperience" data-toggle="tab">Professional Experience</a>
+                <a class="nav-link" href="#skills" data-toggle="tab">Skills</a>
+                <a class="nav-link" href="#education" data-toggle="tab">Education</a>
+                <a class="nav-link" href="#furtherEducation" data-toggle="tab">Further Education</a>
+                <a class="nav-link" href="#speaker" data-toggle="tab">Speaker</a>
+                <a class="nav-link" href="#extraProfessionalActivities" data-toggle="tab">Extra-professional Activities</a>
+                <a class="nav-link" href="#miscellaneous" data-toggle="tab">Miscellaneous</a>
+                <a class="nav-link" href="#aboutThisPage" data-toggle="tab">About this page</a>
             </div>
-            <p>Besides reading my <a href="/blog/">Blog</a> or <a href="/cv/">CV</a> you might want to have a look at my profile on</p>
-            <ul>
-                <li><a href="https://github.com/perprogramming/">github</a></li>
-                <li><a href="https://de.linkedin.com/pub/per-bernhardt/43/402/43/">LinkedIn</a></li>
-                <li><a href="https://www.facebook.com/per.bernhardt">Facebook</a></li>
-                <li><a href="https://connect.sensiolabs.com/profile/perprogramming">SensioLabsConnect</a></li>
-                <li><a href="https://twitter.com/@perprogramming/">Twitter</a></li>
-            </ul>
-            <h2>About this page</h2>
-            <p>This page is hosted on <a href="http://pages.github.com/">github:pages</a>.</p>
-            <p>It has been built using the following tools:</p>
-            <ul>
-                <li><a href="http://php.net">PHP</a></li>
-                <li><a href="http://getsculpin.org">Sculpin</a></li>
-                <li><a href="http://symfony.com/components">Symfony Components</a></li>
-                <li><a href="http://getcomposer.org">Composer</a></li>
-                <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
-                <li><a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a></li>
-            </ul>
-            <p>The source code can be found <a href="https://github.com/perprogramming/perprogramming-website">on github</a>.</p>
+        </div>
+        <div class="col-md-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="welcome">
+                    <h1 class="mb-4">Welcome to perprogramming</h1>
+                    <p class="lead">My name is Per Bernhardt and I'm a software developer living in Bonn, Germany.</p>
+                    <p class="lead">I am a great enthusiast of modern software engineering methodologies including Continuous Integration & Delivery, Automatisation, Microservice Architecture, Lean & Agile Development, Scrum, Container Orchestration and Cloud Computing.</p>
+                    <p class="lead">I am convinced that they are not a hype but that together they build a superior framework of methodologies that are based on natural and long established computer science principles.</p>
+                    <hr />
+                    <p>Besides reading the information on my homepage you might want to have a look at my profiles on</p>
+                    <ul>
+                        <li><a href="https://www.slideshare.net/perprogramming">SlideShare</a></li>
+                        <li><a href="https://github.com/perprogramming/">github</a></li>
+                        <li><a href="https://de.linkedin.com/pub/per-bernhardt/43/402/43/">LinkedIn</a></li>
+                        <li><a href="https://www.facebook.com/per.bernhardt">Facebook</a></li>
+                        <li><a href="https://connect.sensiolabs.com/profile/perprogramming">SensioLabsConnect</a></li>
+                        <li><a href="https://twitter.com/@perprogramming/">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade show" id="personalDetails">
+                    <h1 class="mb-4">Personal Details</h1>
+                                            <dl class="row">
+        <dt title="" class="col-sm-3"></dt>
+        <dd class="col-sm-9">                        <img src="/img/per-bernhardt.jpg" alt="Per Bernhardt" />
+                    </dd>
+    </dl>
+
+
+                        <dl class="row">
+        <dt title="Name" class="col-sm-3">Name</dt>
+        <dd class="col-sm-9">Per Bernhardt</dd>
+    </dl>
+
+
+                        <dl class="row">
+        <dt title="Born on" class="col-sm-3">Born on</dt>
+        <dd class="col-sm-9">27 April 1984, Siegburg, Germany</dd>
+    </dl>
+
+
+                        <dl class="row">
+        <dt title="Gender" class="col-sm-3">Gender</dt>
+        <dd class="col-sm-9">male</dd>
+    </dl>
+
+
+                        <dl class="row">
+        <dt title="Nationality" class="col-sm-3">Nationality</dt>
+        <dd class="col-sm-9">German</dd>
+    </dl>
+
+
+                                            <dl class="row">
+        <dt title="Address" class="col-sm-3">Address</dt>
+        <dd class="col-sm-9">                        Rotdornweg 15<br />
+                        53177 Bonn<br />
+                        Germany
+                    </dd>
+    </dl>
+
+
+                        <dl class="row">
+        <dt title="Phone" class="col-sm-3">Phone</dt>
+        <dd class="col-sm-9">+4916094949894</dd>
+    </dl>
+
+
+                                            <dl class="row">
+        <dt title="Email" class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">                        <a href="mailto:info@perprogramming.de">info@perprogramming.de</a>
+                    </dd>
+    </dl>
+
+                </div>
+
+                <div class="tab-pane fade show" id="professionalExperience">
+                    <h1 class="mb-4">Professional Experience</h1>
+                                                    <dl class="row">
+        <dt title="2015 - present" class="col-sm-3">2015 - present</dt>
+        <dd class="col-sm-9">            <strong>Software Architect</strong><br />
+                        <em>Chefkoch GmbH, Bonn, Germany</em><br />                        Since I started at chefkoch.de I took part in or led a number of projects and teams in their engineering department. Overall I played a major role in a successful long-term transformation from a slow-iteration software development workflow in a monolithic application running on bare metal towards a rapid CI/CD workflow of microservices running on a kubernetes container cluster.<br />                                        <br />
+                Interesting projects:<br /><br />
+                <ul>
+                                            <li>
+                            <a href="http://www.chefkoch.de">DevOps &amp; Refactoring our infrastructure</a><br />
+                            In January 2018 I was one of two colleagues from Software Development that joined our ops team.
+Our mission was to finalize the transition to Kubernetes and get rid of all servers
+that were not running containers. That also ment refactoring all remaining applications
+(monoliths &amp; microservices) to run in Kubernetes. We also introduced a complete new
+monitoring and logging setup based on Filebeat, Prometheus, Grafana and ElasticStack (ELK).
+We are currently looking into how cloud computing can further improve our operations.
+<br />
+                            Project started: 2018<br />
+                            Keywords: <em>Kubernetes</em>, <em>Docker</em>, <em>Docker-Compose</em>, <em>ELK</em>, <em>Prometheus</em>, <em>Ansible</em><br />                            <br />
+                        </li>
+                                            <li>
+                            <a href="http://www.chefkoch.de/">Introducing Google Analytics</a><br />
+                            In summer 2017 I led a Scrum development team as &quot;Technical Product Owner&quot;. One of our greater epics was
+to move all tracking at Chefkoch from WebTrekk to Google Analytics. One goal of this transition was to
+reduce inconsistencies in the tracked data as we heavily rely on them for our sales customers.
+We quickly designed and launched a static Javascript middleware that contained all logic to map
+information from our HTML web pages to Google Analytics. The middleware was written in a testdriven
+approach to ensure complete test coverage of all mapping logic. Se setup also included a logging solution
+enabling us to see any mapping errors happening within the browser of our users.
+<br />
+                            Project started: 2017<br />
+                            Keywords: <em>JavaScript</em>, <em>Google Analytics</em>, <em>Docker</em>, <em>Kubernetes</em>, <em>ELK</em><br />                            <br />
+                        </li>
+                                            <li>
+                            <a href="http://www.chefkoch.de/magazin/">Migrating a self-written CMS to an open-source solution (Drupal)</a><br />
+                            In early 2016 I was part of a new Scrum development team. Its mission was to migrate all
+editorial content from some self-written CMS to an open-source solution (Drupal).
+The project was quite difficult as it also included a complete UX/UI redesign of the content
+and some new native sales products on top of it. We managed to launch the new CMS to our Kubernetes
+cluster in about 11 month. As Drupal is quite slow performance-wise, the setup included sophisticated
+caching based on Redis (backend) and Varnish (HTTP).
+<br />
+                            Project started: 2016<br />
+                            Keywords: <em>PHP</em>, <em>Drupal</em>, <em>MariaDB</em>, <em>Varnish</em>, <em>Redis</em>, <em>Kubernetes</em>, <em>Docker</em><br />                            <br />
+                        </li>
+                                    </ul>
+                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2013 - 2015" class="col-sm-3">2013 - 2015</dt>
+        <dd class="col-sm-9">            <strong>Senior Software Developer</strong><br />
+                        <em>Chefkoch GmbH, Bonn, Germany</em><br />                        Since I started at chefkoch.de I took part in or led a number of projects and teams in their engineering department. Overall I played a major role in a successful long-term transformation from a slow-iteration software development workflow in a monolithic application running on bare metal towards a rapid CI/CD workflow of microservices running on a kubernetes container cluster.<br />                                        <br />
+                Interesting projects:<br /><br />
+                <ul>
+                                            <li>
+                            <a href="http://www.chefkoch.de">Introducing Docker &amp; Kubernetes</a><br />
+                            In 2014 Chefkoch decided to move towards a Microservice architecture.
+Right at the same time Docker arrived and we thought it is a perfect match.
+After some initial experiments on how to run PHP-based web applications
+in containers and orchestrating them with CoreOS&#039; Fleet, we felt a need for a more flexible
+orchestration solution. We finally decided for Kubernetes and launched our first microservice
+to a production cluster, just days after Kubernetes 1.0 was released in July 2015.
+<br />
+                            Project started: 2015<br />
+                            Keywords: <em>Docker</em>, <em>Fleet</em>, <em>Kubernetes</em><br />                            <br />
+                        </li>
+                                            <li>
+                            <a href="http://www.chefkoch.de">Establishing Scrum Methodology</a><br />
+                            I was part of the first development team at Chefkoch that used Scrum as their new development approach.
+<br />
+                            Project started: 2014<br />
+                            Keywords: <em>Scrum</em><br />                            <br />
+                        </li>
+                                            <li>
+                            <a href="http://www.chefkoch.de">Introducing a new REST API for mobile apps</a><br />
+                            New mobile apps launched in February 2014 needed a fresh REST API to get their data from.
+We used this API to introduce the Web Application Framework Symfony2 to the company.
+It was also the first project at Chefkoch were automated tests and Continuous Integration were used.
+<br />
+                            Project started: 2013<br />
+                            Keywords: <em>PHP</em>, <em>MariaDB</em>, <em>Nginx</em>, <em>Symfony2</em>, <em>Solr</em>, <em>Doctrine2</em>, <em>Varnish</em><br />                            <br />
+                        </li>
+                                    </ul>
+                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2013" class="col-sm-3">2013</dt>
+        <dd class="col-sm-9">            <strong>Senior Software Developer</strong><br />
+                        <em>STARTPLATZ, Cologne, Germany</em><br />                        Consulting and Technical Support for startups in Cologne area<br />                                        <br />
+                Interesting projects:<br /><br />
+                <ul>
+                                            <li>
+                            <a href="http://www.golfpost.de">Golfpost - New Setup on Symfony2</a><br />
+                            <br />
+                            Project started: 2013<br />
+                            Keywords: <em>PHP</em>, <em>MySQL</em>, <em>Apache2</em>, <em>Wordpress =&gt; Symfony2</em><br />                            <br />
+                        </li>
+                                    </ul>
+                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2005 - 2013" class="col-sm-3">2005 - 2013</dt>
+        <dd class="col-sm-9">            <strong>Senior Software Developer</strong><br />
+                        <em>webfactory GmbH, Bonn, Germany</em><br />                        Development of webfactory&#039;s software platform and infrastructure, running in Amazon Web Services cloud; software analysis, architecture and design for long-term customer projects<br />                                        <br />
+                Interesting projects:<br /><br />
+                <ul>
+                                            <li>
+                            <a href="http://www.siz.de">SIZ webbased audit</a><br />
+                            Web application for implementing IT security audits in large-scale organisations for our customer SIZ - IT Products and Consulting.<br />
+                            Project started: 2011<br />
+                            Keywords: <em>PHP</em>, <em>MySQL</em>, <em>Apache2</em>, <em>IIS</em>, <em>MSSQL</em>, <em>ZendFramework</em>, <em>Doctrine2</em><br />                            <br />
+                        </li>
+                                            <li>
+                            <a href="https://www.youthpass.eu">Youthpass</a><br />
+                            Web application generating PDF certificates for participants of the EU Youth in Action Programme, available in 28 languages.<br />
+                            Project started: 2007<br />
+                            Keywords: <em>PHP</em>, <em>MySQL</em>, <em>Apache2</em>, <em>Amazon AWS</em>, <em>Multilingual</em>, <em>Apache FOP</em>, <em>Propel</em>, <em>Symfony2</em><br />                            <br />
+                        </li>
+                                            <li>
+                            <a href="https://www.g-ba.de">Federal Joint Committee</a><br />
+                            The Federal Joint Committee (G-BA) is the highest decision-making body of the joint self-government of physicians, dentists, hospitals and health insurance funds in Germany.<br />
+                            Project started: 2006<br />
+                            Keywords: <em>PHP</em>, <em>MySQL</em>, <em>Apache2</em>, <em>Amazon AWS</em>, <em>Twig</em>, <em>Propel</em>, <em>Symfony2</em>, <em>Apache Solr</em><br />                            <br />
+                        </li>
+                                    </ul>
+                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2001 - 2005" class="col-sm-3">2001 - 2005</dt>
+        <dd class="col-sm-9">            <strong>Entrepreneur</strong><br />
+                        <em>Sinfin EDV, Bonn/Rhein-Sieg, Germany</em><br />                        IT services, e.g. network and workstation administration in small business and home environments, hardware and software retail, web design and application development<br />                                </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2000" class="col-sm-3">2000</dt>
+        <dd class="col-sm-9">            <strong>Trainer</strong><br />
+                        <em>Forum Neunkirchen, Neunkirchen-Seelscheid, Germany</em><br />                        Preparation and implementation of computer training classes for children aged 4 to 12 years<br />                                </dd>
+    </dl>
+
+    
+                </div>
+
+                <div class="tab-pane fade show" id="skills">
+                    <h1 class="mb-4">Skills</h1>
+                                <dl class="row">
+        <dt title="Methodologies" class="col-sm-3">Methodologies</dt>
+        <dd class="col-sm-9">        <ul>
+                           <li>Infrastructure As Code</li>
+                           <li>Containers</li>
+                           <li>Continuous Integration & Delivery</li>
+                           <li>Cloud Computing</li>
+                           <li>Software Engineering</li>
+                           <li>Test Automatisation</li>
+                           <li>Lean & Agile Development</li>
+                           <li>Web Development</li>
+                    </ul>
+    </dd>
+    </dl>
+
+
+                                <dl class="row">
+        <dt title="Techniques" class="col-sm-3">Techniques</dt>
+        <dd class="col-sm-9">        <ul>
+                           <li>Application Frameworks</li>
+                           <li>Object-Relational Mapping (ORM)</li>
+                           <li>HTTP</li>
+                           <li>Web Caching</li>
+                           <li>REST</li>
+                           <li>API Development</li>
+                           <li>SQL</li>
+                           <li>CSS</li>
+                           <li>OAuth</li>
+                           <li>Scrum</li>
+                           <li>Kanban</li>
+                    </ul>
+    </dd>
+    </dl>
+
+
+                                <dl class="row">
+        <dt title="Tools" class="col-sm-3">Tools</dt>
+        <dd class="col-sm-9">        <ul>
+                           <li>Kubernetes</li>
+                           <li>Docker</li>
+                           <li>Prometheus</li>
+                           <li>Grafana</li>
+                           <li>ELK</li>
+                           <li>AWS</li>
+                           <li>GCP</li>
+                           <li>Azure</li>
+                           <li>HetznerCloud</li>
+                           <li>Terraform</li>
+                           <li>Puppet</li>
+                           <li>Chef</li>
+                           <li>Ansible</li>
+                           <li>Ant</li>
+                           <li>Linux</li>
+                           <li>Git</li>
+                           <li>Vagrant</li>
+                           <li>Gitlab</li>
+                           <li>Bitbucket</li>
+                           <li>Bamboo</li>
+                           <li>Jira</li>
+                           <li>Confluence</li>
+                           <li>Solr</li>
+                           <li>Varnish</li>
+                           <li>Nginx</li>
+                           <li>Apache</li>
+                           <li>Redis</li>
+                           <li>Google Analytics</li>
+                    </ul>
+    </dd>
+    </dl>
+
+
+                                <dl class="row">
+        <dt title="Programming Languages" class="col-sm-3">Programming Languages</dt>
+        <dd class="col-sm-9">        <ul>
+                           <li>PHP</li>
+                           <li>Java</li>
+                           <li>Go</li>
+                           <li>Javascript</li>
+                    </ul>
+    </dd>
+    </dl>
+
+
+                </div>
+
+                <div class="tab-pane fade show" id="education">
+                    <h1 class="mb-4">Education</h1>
+                                                    <dl class="row">
+        <dt title="2013" class="col-sm-3">2013</dt>
+        <dd class="col-sm-9">            <strong>SensioLabs Certified Symfony Developer</strong><br />
+                        <em>SensioLabs, Cologne, Germany</em><br />                        The SensioLabs Symfony2 Framework certification exam is an industry standard to help developers distinguish themselves and emphazise their skill towards IT companies<br />                                </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2007 - 2015" class="col-sm-3">2007 - 2015</dt>
+        <dd class="col-sm-9">            <strong>Computer Science (B.Sc.)</strong><br />
+                        <em>Bonn-Rhein-Sieg University of Applied Sciences, Sankt Augustin, Germany</em><br />                        Part-time bachelor degree studies in Computer Science, specialization &quot;Complex Software Systems&quot;, Average Grade 2.2<br />                                </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2005 - 2007" class="col-sm-3">2005 - 2007</dt>
+        <dd class="col-sm-9">            <strong>Vocational Qualification &quot;Qualified IT Specialist&quot;</strong><br />
+                        <em>Industrie- und Handelskammer Bonn/Rhein-Sieg, Germany</em><br />                        Average grade: 2.0<br />                                </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2005 – 2007" class="col-sm-3">2005 – 2007</dt>
+        <dd class="col-sm-9">            <strong>Vocational School Graduation</strong><br />
+                        <em>Heinrich-Hertz-Berufskolleg, Bonn, Germany</em><br />                        School-related part of the vocational qualification &quot;Qualified IT Specialist&quot;, Average grade: 1.1<br />                                </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="1994 - 2003" class="col-sm-3">1994 - 2003</dt>
+        <dd class="col-sm-9">            <strong>General Qualification for University Entrance (Abitur)</strong><br />
+                        <em>Antonius Kolleg Neunkirchen, Neunkirchen-Seelscheid, Germany</em><br />                        Average grade: 1.5<br />                                </dd>
+    </dl>
+
+    
+                </div>
+
+                <div class="tab-pane fade show" id="furtherEducation">
+                    <h1 class="mb-4">Further Education</h1>
+                                                    <dl class="row">
+        <dt title="30 September 2014" class="col-sm-3">30 September 2014</dt>
+        <dd class="col-sm-9">            <strong>AngularJS-Workshop</strong><br />
+            Trainer: Sebastian Mancke<br />            <em>Bonn, Germany</em><br />                                                        </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="05 March 2012" class="col-sm-3">05 March 2012</dt>
+        <dd class="col-sm-9">            <strong>Creating Mobile apps with jQuery Mobile</strong><br />
+            Trainer: Maximiliano Firtman<br />            <em>London, United Kingdom</em><br />                                                        </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="20 October 2011" class="col-sm-3">20 October 2011</dt>
+        <dd class="col-sm-9">            <strong>Build your own framework... based on the Symfony2 components</strong><br />
+            Trainer: Fabien Potencier<br />            <em>Cologne, Germany</em><br />                                                        </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="8 March 2011" class="col-sm-3">8 March 2011</dt>
+        <dd class="col-sm-9">            <strong>Designing Software, Drawing Pictures</strong><br />
+            Trainer: Simon Brown<br />            <em>London, United Kingdom</em><br />                                                        </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="1 March 2010" class="col-sm-3">1 March 2010</dt>
+        <dd class="col-sm-9">            <strong>Advanced Javascript</strong><br />
+            Trainer: Paul Bakaus<br />            <em>Wiesbaden, Germany</em><br />                                                        </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="January - June 2008" class="col-sm-3">January - June 2008</dt>
+        <dd class="col-sm-9">            <strong>CCNA 4 WAN Technologies</strong><br />
+                        <em>HHB Bonn, Germany</em><br />                                                        </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="29 June 2007" class="col-sm-3">29 June 2007</dt>
+        <dd class="col-sm-9">            <strong>The Secret of Effective Teams: Agile, Discipline, Focus</strong><br />
+            Trainer: Alistair Cockburn<br />            <em>Bonn, Germany</em><br />                                                        </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="April - August 2007" class="col-sm-3">April - August 2007</dt>
+        <dd class="col-sm-9">            <strong>CCNA 3 Switching Basics and Intermediate Routing</strong><br />
+                        <em>HHB Bonn, Germany</em><br />                                                        </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="March - July 2006" class="col-sm-3">March - July 2006</dt>
+        <dd class="col-sm-9">            <strong>CCNA 2 Router and Routing Basics</strong><br />
+                        <em>HHB Bonn, Germany</em><br />                                                        </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="October 2005 - February 2006" class="col-sm-3">October 2005 - February 2006</dt>
+        <dd class="col-sm-9">            <strong>CCNA 1 Network Basics</strong><br />
+                        <em>HHB Bonn, Germany</em><br />                                                        </dd>
+    </dl>
+
+    
+                </div>
+
+                <div class="tab-pane fade show" id="speaker">
+                    <h1 class="mb-4">Speaker</h1>
+                                                    <dl class="row">
+        <dt title="2017" class="col-sm-3">2017</dt>
+        <dd class="col-sm-9">            <strong>Magazin-Relaunch bei Chefkoch</strong><br />
+                        <em>G+J Headquarters, Hamburg</em><br />                        A talk on how continuous delivery helped us migrating our editorial content into an open-source solution (Drupal) running on Kubernetes.<br />            <a href="https://www.slideshare.net/perprogramming/magazinrelaunch-bei-chefkoch">https://www.slideshare.net/perprogramming/magazinrelaunch-bei-chefkoch</a><br />                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2016" class="col-sm-3">2016</dt>
+        <dd class="col-sm-9">            <strong>Contract Tests mit Pact</strong><br />
+                        <em>Microservice Meetup, Bonn</em><br />                        This talk shows how Contract Testing with Pact eases microservice development.<br />            <a href="https://www.slideshare.net/perprogramming/contract-tests-mit-pact">https://www.slideshare.net/perprogramming/contract-tests-mit-pact</a><br />                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2016" class="col-sm-3">2016</dt>
+        <dd class="col-sm-9">            <strong>Chefkoch goes Drupal8</strong><br />
+                        <em>Code Talks 2016, Hamburg</em><br />                        A talk on how we migrated our editorial content from a self-written CMS to an open-source solution (Drupal).<br />            <a href="https://www.slideshare.net/perprogramming/chefkoch-goes-drupal8">https://www.slideshare.net/perprogramming/chefkoch-goes-drupal8</a><br />                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2016" class="col-sm-3">2016</dt>
+        <dd class="col-sm-9">            <strong>Umzug eines Hochlast-Dienstes</strong><br />
+                        <em>Code Talks 2016, Hamburg</em><br />                        A talk on how we moved a high traffic Solr-based site search from bare metal to containers running on Kubernetes.<br />            <a href="https://www.slideshare.net/perprogramming/umzug-eines-hochlastdienstes">https://www.slideshare.net/perprogramming/umzug-eines-hochlastdienstes</a><br />                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2016" class="col-sm-3">2016</dt>
+        <dd class="col-sm-9">            <strong>kubernetes @ Chefkoch.de</strong><br />
+                        <em>Kubernetes Meetup, Cologne</em><br />                        A talk on how we introduced Docker &amp; Kubernetes at Chefkoch.<br />            <a href="https://www.slideshare.net/perprogramming/kubernetes-chefkochde-kubernetes-meetup-cologne">https://www.slideshare.net/perprogramming/kubernetes-chefkochde-kubernetes-meetup-cologne</a><br />                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2015" class="col-sm-3">2015</dt>
+        <dd class="col-sm-9">            <strong>Kubernetes: Wie Chefkoch.de mit Containern arbeitet</strong><br />
+                        <em>Symfony Live 2015, Berlin</em><br />                        A talk on how we introduced Docker &amp; Kubernetes at Chefkoch.<br />            <a href="https://www.slideshare.net/perprogramming/kubernetes-wie-chefkochde-mit-containern-arbeitet">https://www.slideshare.net/perprogramming/kubernetes-wie-chefkochde-mit-containern-arbeitet</a><br />                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2015" class="col-sm-3">2015</dt>
+        <dd class="col-sm-9">            <strong>Microservice-Teststrategie mit Symfony2</strong><br />
+                        <em>Code Talks 2015, Hamburg</em><br />                        Talk on how to apply a teststrategy on microservices in PHP / Symfony2.<br />            <a href="https://www.slideshare.net/perprogramming/microservice-teststrategie-mit-symfony2">https://www.slideshare.net/perprogramming/microservice-teststrategie-mit-symfony2</a><br />                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2014" class="col-sm-3">2014</dt>
+        <dd class="col-sm-9">            <strong>Continuous Integration &amp; Delivery with Bamboo</strong><br />
+                        <em>Chefkoch GmbH, Bonn</em><br />                        A short introduction to Continuous Integration and Continuous Delivery with Bamboo.<br />            <a href="https://www.slideshare.net/perprogramming/bamboo-32118880">https://www.slideshare.net/perprogramming/bamboo-32118880</a><br />                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2014" class="col-sm-3">2014</dt>
+        <dd class="col-sm-9">            <strong>Application Layer in PHP</strong><br />
+                        <em>Symfony User Group, Cologne</em><br />                        Talk on a possible way to implement &quot;Layered Architecture&quot; (Martin Fowler) in PHP / Symfony2.<br />            <a href="https://www.slideshare.net/perprogramming/application-layer-33335917">https://www.slideshare.net/perprogramming/application-layer-33335917</a><br />                    </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2013" class="col-sm-3">2013</dt>
+        <dd class="col-sm-9">            <strong>Anwendungsintegration mit Edge Side Includes</strong><br />
+                        <em>Symfony User Group, Cologne</em><br />                        Talk on how to integrate different applications on HTTP level using Edge Side Includes<br />            <a href="https://www.slideshare.net/perprogramming/anwendungsintegration-mit-edge-side-includes-29350496">https://www.slideshare.net/perprogramming/anwendungsintegration-mit-edge-side-includes-29350496</a><br />                    </dd>
+    </dl>
+
+    
+                </div>
+
+                <div class="tab-pane fade show" id="extraProfessionalActivities">
+                    <h1 class="mb-4">Extra-professional Activities</h1>
+                                                    <dl class="row">
+        <dt title="2013 - present" class="col-sm-3">2013 - present</dt>
+        <dd class="col-sm-9">            <strong>&quot;Die feinen Herren&quot;</strong><br />
+                        <em>Bonn, Germany</em><br />                        Playing the card game &quot;Skat&quot;<br />                                </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2008 - 2014" class="col-sm-3">2008 - 2014</dt>
+        <dd class="col-sm-9">            <strong>Foosball Player</strong><br />
+                        <em>Kicker Crew Bonn, Germany</em><br />                        Club member, team member, league player, substitute trainer and website administrator<br />                                </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2009 - 2010" class="col-sm-3">2009 - 2010</dt>
+        <dd class="col-sm-9">            <strong>Referee (Association Football)</strong><br />
+                        <em>German Football Association, Rhein/Sieg, Germany</em><br />                        Supervision of regional association football games<br />                                </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="2000 - 2003" class="col-sm-3">2000 - 2003</dt>
+        <dd class="col-sm-9">            <strong>Organising Committee</strong><br />
+                        <em>Antonius Kolleg Neunkirchen, Neunkirchen-Seelscheid, Germany</em><br />                        Event management and event technology for school events<br />                                </dd>
+    </dl>
+
+                                <dl class="row">
+        <dt title="1994 - 2003" class="col-sm-3">1994 - 2003</dt>
+        <dd class="col-sm-9">            <strong>Students Council</strong><br />
+                        <em>Antonius Kolleg Neunkirchen, Neunkirchen-Seelscheid, Germany</em><br />                        Class and students representative<br />                                </dd>
+    </dl>
+
+    
+                </div>
+
+                <div class="tab-pane fade show" id="miscellaneous">
+                    <h1 class="mb-4">Miscellaneous</h1>
+                                <dl class="row">
+        <dt title="Languages" class="col-sm-3">Languages</dt>
+        <dd class="col-sm-9">        <ul>
+                           <li>German (native)</li>
+                           <li>English (fluent)</li>
+                    </ul>
+    </dd>
+    </dl>
+
+
+                                <dl class="row">
+        <dt title="Interests" class="col-sm-3">Interests</dt>
+        <dd class="col-sm-9">        <ul>
+                           <li>Card Games</li>
+                           <li>Foosball</li>
+                           <li>Hiking</li>
+                           <li>Fitness Studio</li>
+                    </ul>
+    </dd>
+    </dl>
+
+
+                </div>
+
+                <div class="tab-pane fade show" id="aboutThisPage">
+                    <h1 class="mb-4">About this page</h1>
+                    <p>This page is hosted on <a href="http://pages.github.com/">github:pages</a>.</p>
+                    <p>It has been built using the following tools:</p>
+                    <ul>
+                        <li><a href="http://php.net">PHP</a></li>
+                        <li><a href="http://getsculpin.org">Sculpin</a></li>
+                        <li><a href="http://symfony.com/components">Symfony Components</a></li>
+                        <li><a href="http://getcomposer.org">Composer</a></li>
+                        <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
+                        <li><a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a></li>
+                    </ul>
+                    <p>The source code can be found <a href="https://github.com/perprogramming/perprogramming-website">on github</a>.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>    <hr />
     <div class="container-fluid">
-        <div class="row-fluid">
-            <p class="offset2">Status as of 12 November 2013</p>
+        <div class="row">
+            <p class="offset-md-3">
+                Status as of 3 March 2019<br />
+                <a href="/imprint">Imprint</a>
+            </p>
         </div>
     </div>
 </div>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="/bootstrap/js/bootstrap.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
