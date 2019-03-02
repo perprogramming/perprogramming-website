@@ -1,22 +1,9 @@
 {
-    "name": "perprogramming/perprogramming-website",
-    "description": "My website",
-    "authors": [
-        {
-            "name": "Per Bernhardt",
-            "email": "info@perprogramming.de"
-        }
-    ],
     "require": {
-        "sculpin/sculpin": "2.*@dev",
-        "twitter/bootstrap": "2.3.*",
+        "sculpin/sculpin": "~2.1",
+        "twitter/bootstrap": "~4.3",
 
-        "dflydev/embedded-composer": "@dev",
-        "michelf/php-markdown": "@beta",
-        "composer/composer": "@dev"
-    },
-    "scripts": {
-        "post-install-cmd": "./bootstrap-build.sh"
+        "dflydev/embedded-composer": "^1.0@dev"
     },
     "autoload": {
         "psr-0": {"": "src/"}

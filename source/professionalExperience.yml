@@ -1,0 +1,124 @@
+-
+    date: 2000
+    title: Trainer
+    location: Forum Neunkirchen, Neunkirchen-Seelscheid, Germany
+    description: Preparation and implementation of computer training classes for children aged 4 to 12 years
+-
+    date: 2001 - 2005
+    title: Entrepreneur
+    location: Sinfin EDV, Bonn/Rhein-Sieg, Germany
+    description: IT services, e.g. network and workstation administration in small business and home environments, hardware and software retail, web design and application development
+-
+    date: 2005 - 2013
+    title: Senior Software Developer
+    location: webfactory GmbH, Bonn, Germany
+    description: Development of webfactory's software platform and infrastructure, running in Amazon Web Services cloud; software analysis, architecture and design for long-term customer projects
+    projects:
+        -
+            title: SIZ webbased audit
+            description: Web application for implementing IT security audits in large-scale organisations for our customer SIZ - IT Products and Consulting.
+            keywords: [PHP, MySQL, Apache2, IIS, MSSQL, ZendFramework, Doctrine2]
+            url: http://www.siz.de
+            start: 2011
+        -
+            title: Youthpass
+            description: Web application generating PDF certificates for participants of the EU Youth in Action Programme, available in 28 languages.
+            keywords: [PHP, MySQL, Apache2, Amazon AWS, Multilingual, Apache FOP, Propel, Symfony2]
+            url: https://www.youthpass.eu
+            start: 2007
+        -
+            title: Federal Joint Committee
+            description: The Federal Joint Committee (G-BA) is the highest decision-making body of the joint self-government of physicians, dentists, hospitals and health insurance funds in Germany.
+            keywords: [PHP, MySQL, Apache2, Amazon AWS, Twig, Propel, Symfony2, Apache Solr]
+            url: https://www.g-ba.de
+            start: 2006
+-
+    date: 2013
+    title: Senior Software Developer
+    location: STARTPLATZ, Cologne, Germany
+    description: Consulting and Technical Support for startups in Cologne area
+    projects:
+        -
+            title: Golfpost - New Setup on Symfony2
+            description:
+            keywords: [PHP, MySQL, Apache2, Wordpress => Symfony2]
+            url: http://www.golfpost.de
+            start: 2013
+-
+    date: 2013 - 2015
+    title: Senior Software Developer
+    location: Chefkoch GmbH, Bonn, Germany
+    description: Since I started at chefkoch.de I took part in or led a number of projects and teams in their engineering department. Overall I played a major role in a successful long-term transformation from a slow-iteration software development workflow in a monolithic application running on bare metal towards a rapid CI/CD workflow of microservices running on a kubernetes container cluster.
+    projects:
+        -
+            title: Introducing Docker & Kubernetes
+            description: |
+              In 2014 Chefkoch decided to move towards a Microservice architecture.
+              Right at the same time Docker arrived and we thought it is a perfect match.
+              After some initial experiments on how to run PHP-based web applications
+              in containers and orchestrating them with CoreOS' Fleet, we felt a need for a more flexible
+              orchestration solution. We finally decided for Kubernetes and launched our first microservice
+              to a production cluster, just days after Kubernetes 1.0 was released in July 2015.
+            keywords: [Docker, Fleet, Kubernetes]
+            url: http://www.chefkoch.de
+            start: 2015
+        -
+            title: Establishing Scrum Methodology
+            description: |
+              I was part of the first development team at Chefkoch that used Scrum as their new development approach.
+            keywords: [Scrum]
+            url: http://www.chefkoch.de
+            start: 2014
+        -
+            title: Introducing a new REST API for mobile apps
+            description: |
+              New mobile apps launched in February 2014 needed a fresh REST API to get their data from.
+              We used this API to introduce the Web Application Framework Symfony2 to the company.
+              It was also the first project at Chefkoch were automated tests and Continuous Integration were used.
+            keywords: [PHP, MariaDB, Nginx, Symfony2, Solr, Doctrine2, Varnish]
+            url: http://www.chefkoch.de
+            start: 2013
+
+-
+    date: 2015 - present
+    title: Software Architect
+    location: Chefkoch GmbH, Bonn, Germany
+    description: Since I started at chefkoch.de I took part in or led a number of projects and teams in their engineering department. Overall I played a major role in a successful long-term transformation from a slow-iteration software development workflow in a monolithic application running on bare metal towards a rapid CI/CD workflow of microservices running on a kubernetes container cluster.
+    projects:
+        -
+            title: DevOps & Refactoring our infrastructure
+            description: |
+              In January 2018 I was one of two colleagues from Software Development that joined our ops team.
+              Our mission was to finalize the transition to Kubernetes and get rid of all servers
+              that were not running containers. That also ment refactoring all remaining applications
+              (monoliths & microservices) to run in Kubernetes. We also introduced a complete new
+              monitoring and logging setup based on Filebeat, Prometheus, Grafana and ElasticStack (ELK).
+              We are currently looking into how cloud computing can further improve our operations.
+            keywords: [Kubernetes, Docker, Docker-Compose, ELK, Prometheus, Ansible]
+            url: http://www.chefkoch.de
+            start: 2018
+        -
+            title: Introducing Google Analytics
+            description: |
+              In summer 2017 I led a Scrum development team as "Technical Product Owner". One of our greater epics was
+              to move all tracking at Chefkoch from WebTrekk to Google Analytics. One goal of this transition was to
+              reduce inconsistencies in the tracked data as we heavily rely on them for our sales customers.
+              We quickly designed and launched a static Javascript middleware that contained all logic to map
+              information from our HTML web pages to Google Analytics. The middleware was written in a testdriven
+              approach to ensure complete test coverage of all mapping logic. Se setup also included a logging solution
+              enabling us to see any mapping errors happening within the browser of our users.
+            keywords: [JavaScript, Google Analytics, Docker, Kubernetes, ELK]
+            url: http://www.chefkoch.de/
+            start: 2017
+        -
+            title: Migrating a self-written CMS to an open-source solution (Drupal)
+            description: |
+              In early 2016 I was part of a new Scrum development team. Its mission was to migrate all
+              editorial content from some self-written CMS to an open-source solution (Drupal).
+              The project was quite difficult as it also included a complete UX/UI redesign of the content
+              and some new native sales products on top of it. We managed to launch the new CMS to our Kubernetes
+              cluster in about 11 month. As Drupal is quite slow performance-wise, the setup included sophisticated
+              caching based on Redis (backend) and Varnish (HTTP).
+            keywords: [PHP, Drupal, MariaDB, Varnish, Redis, Kubernetes, Docker]
+            url: http://www.chefkoch.de/magazin/
+            start: 2016

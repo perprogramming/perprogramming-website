@@ -5,9 +5,10 @@
         {% set definition %}
             <strong>{{ event.title }}</strong><br />
             {% if event.trainer is defined %}Trainer: {{ event.trainer }}<br />{% endif %}
-            {% if event.location is defined %}{{ event.location }}<br />{% endif %}
+            {% if event.location is defined %}<em>{{ event.location }}</em><br />{% endif %}
             {% if event.speakers is defined %}<small>Speakers: i.a. {{ event.speakers | join(', ') }}</small><br />{% endif %}
             {% if event.description is defined %}{{ event.description }}<br />{% endif %}
+            {% if event.slides is defined %}<a href="{{event.slides}}">{{ event.slides }}</a><br />{% endif %}
             {% if event.projects is defined %}
                 <br />
                 Interesting projects:<br /><br />
@@ -40,8 +41,8 @@
 {% endmacro %}
 
 {% macro definition(term, definition) %}
-    <dl class="dl-horizontal">
-        <dt title="{{ term }}" class="">{{ term }}</dt>
-        <dd>{{ definition | raw }}</dd>
+    <dl class="row">
+        <dt title="{{ term }}" class="col-sm-3">{{ term }}</dt>
+        <dd class="col-sm-9">{{ definition | raw }}</dd>
     </dl>
 {% endmacro %}

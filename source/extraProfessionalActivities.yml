@@ -1,6 +1,3 @@
----
-extraProfessionalActivities: true
----
 -
     date: 1994 - 2003
     title: Students Council
@@ -17,7 +14,12 @@ extraProfessionalActivities: true
     location: German Football Association, Rhein/Sieg, Germany
     description: Supervision of regional association football games
 -
-    date: 2008 - present
+    date: 2008 - 2014
     title: Foosball Player
     location: Kicker Crew Bonn, Germany
     description: Club member, team member, league player, substitute trainer and website administrator
+-
+    date: 2013 - present
+    title: "\"Die feinen Herren\""
+    location: Bonn, Germany
+    description: Playing the card game "Skat"

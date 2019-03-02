@@ -6,29 +6,24 @@
 
     <services>
         <service id="perprogramming_website.education_data_provider" class="Perprogramming\Bundle\WebsiteBundle\DataProvider\YamlFileDataProvider">
-            <argument>education</argument>
+            <argument>%kernel.root_dir%/../source/education.yml</argument>
             <tag name="sculpin.data_provider" alias="education" />
-            <tag name="kernel.event_subscriber" />
         </service>
         <service id="perprogramming_website.professional_experience_data_provider" class="Perprogramming\Bundle\WebsiteBundle\DataProvider\YamlFileDataProvider">
-            <argument>professionalExperience</argument>
+            <argument>%kernel.root_dir%/../source/professionalExperience.yml</argument>
             <tag name="sculpin.data_provider" alias="professionalExperience" />
-            <tag name="kernel.event_subscriber" />
         </service>
         <service id="perprogramming_website.further_education_data_provider" class="Perprogramming\Bundle\WebsiteBundle\DataProvider\YamlFileDataProvider">
-            <argument>furtherEducation</argument>
+            <argument>%kernel.root_dir%/../source/furtherEducation.yml</argument>
             <tag name="sculpin.data_provider" alias="furtherEducation" />
-            <tag name="kernel.event_subscriber" />
         </service>
-        <service id="perprogramming_website.conference_attendances_data_provider" class="Perprogramming\Bundle\WebsiteBundle\DataProvider\YamlFileDataProvider">
-            <argument>conferenceAttendances</argument>
-            <tag name="sculpin.data_provider" alias="conferenceAttendances" />
-            <tag name="kernel.event_subscriber" />
+        <service id="perprogramming_website.speaker_data_provider" class="Perprogramming\Bundle\WebsiteBundle\DataProvider\YamlFileDataProvider">
+            <argument>%kernel.root_dir%/../source/speaker.yml</argument>
+            <tag name="sculpin.data_provider" alias="speaker" />
         </service>
         <service id="perprogramming_website.extra_professional_activities_data_provider" class="Perprogramming\Bundle\WebsiteBundle\DataProvider\YamlFileDataProvider">
-            <argument>extraProfessionalActivities</argument>
+            <argument>%kernel.root_dir%/../source/extraProfessionalActivities.yml</argument>
             <tag name="sculpin.data_provider" alias="extraProfessionalActivities" />
-            <tag name="kernel.event_subscriber" />
         </service>
     </services>
 </container>

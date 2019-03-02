@@ -1,38 +1,135 @@
 ---
 layout: default
-title: Welcome
-activeNav: ~
+use:
+    - education
+    - professionalExperience
+    - furtherEducation
+    - speaker
+    - extraProfessionalActivities
 ---
+{% import "macros" as macros %}
 <div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span2">
-            <img src="/img/per-icon.png" width="150" alt="perprogramming" />
-        </div>
-        <div class="span10">
-            <div class="page-header">
-                <h1>Welcome to perprogramming</h1>
-                <p class="lead">My name is Per Bernhardt and I'm a software developer living in Bonn, Germany.</p>
+    <div class="row">
+        <h1 class="offset-md-2">{{ page.title }}</h1>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-3">
+            <div class="nav flex-column nav-pills mb-4" id="v-pills-tab" role="tablist">
+                <a class="nav-link active" href="#welcome" data-toggle="tab">Welcome</a>
+                <a class="nav-link" href="#personalDetails" data-toggle="tab">Personal Details</a>
+                <a class="nav-link" href="#professionalExperience" data-toggle="tab">Professional Experience</a>
+                <a class="nav-link" href="#skills" data-toggle="tab">Skills</a>
+                <a class="nav-link" href="#education" data-toggle="tab">Education</a>
+                <a class="nav-link" href="#furtherEducation" data-toggle="tab">Further Education</a>
+                <a class="nav-link" href="#speaker" data-toggle="tab">Speaker</a>
+                <a class="nav-link" href="#extraProfessionalActivities" data-toggle="tab">Extra-professional Activities</a>
+                <a class="nav-link" href="#miscellaneous" data-toggle="tab">Miscellaneous</a>
+                <a class="nav-link" href="#aboutThisPage" data-toggle="tab">About this page</a>
             </div>
-            <p>Besides reading my <a href="/blog/">Blog</a> or <a href="/cv/">CV</a> you might want to have a look at my profile on</p>
-            <ul>
-                <li><a href="https://github.com/perprogramming/">github</a></li>
-                <li><a href="https://de.linkedin.com/pub/per-bernhardt/43/402/43/">LinkedIn</a></li>
-                <li><a href="https://www.facebook.com/per.bernhardt">Facebook</a></li>
-                <li><a href="https://connect.sensiolabs.com/profile/perprogramming">SensioLabsConnect</a></li>
-                <li><a href="https://twitter.com/@perprogramming/">Twitter</a></li>
-            </ul>
-            <h2>About this page</h2>
-            <p>This page is hosted on <a href="http://pages.github.com/">github:pages</a>.</p>
-            <p>It has been built using the following tools:</p>
-            <ul>
-                <li><a href="http://php.net">PHP</a></li>
-                <li><a href="http://getsculpin.org">Sculpin</a></li>
-                <li><a href="http://symfony.com/components">Symfony Components</a></li>
-                <li><a href="http://getcomposer.org">Composer</a></li>
-                <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
-                <li><a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a></li>
-            </ul>
-            <p>The source code can be found <a href="https://github.com/perprogramming/perprogramming-website">on github</a>.</p>
+        </div>
+        <div class="col-md-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="welcome">
+                    <h1 class="mb-4">Welcome to perprogramming</h1>
+                    <p class="lead">My name is Per Bernhardt and I'm a software developer living in Bonn, Germany.</p>
+                    <p class="lead">I am a great enthusiast of modern software engineering methodologies including Continuous Integration & Delivery, Automatisation, Microservice Architecture, Lean & Agile Development, Scrum, Container Orchestration and Cloud Computing.</p>
+                    <p class="lead">I am convinced that they are not a hype but that together they build a superior framework of methodologies that are based on natural and long established computer science principles.</p>
+                    <hr />
+                    <p>Besides reading the information on my homepage you might want to have a look at my profiles on</p>
+                    <ul>
+                        <li><a href="https://www.slideshare.net/perprogramming">SlideShare</a></li>
+                        <li><a href="https://github.com/perprogramming/">github</a></li>
+                        <li><a href="https://de.linkedin.com/pub/per-bernhardt/43/402/43/">LinkedIn</a></li>
+                        <li><a href="https://www.facebook.com/per.bernhardt">Facebook</a></li>
+                        <li><a href="https://connect.sensiolabs.com/profile/perprogramming">SensioLabsConnect</a></li>
+                        <li><a href="https://twitter.com/@perprogramming/">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade show" id="personalDetails">
+                    <h1 class="mb-4">Personal Details</h1>
+                    {% set definition %}
+                        <img src="/img/per-bernhardt.jpg" alt="Per Bernhardt" />
+                    {% endset %}
+                    {{ macros.definition('', definition) }}
+
+                    {{ macros.definition('Name', 'Per Bernhardt') }}
+
+                    {{ macros.definition('Born on', '27 April 1984, Siegburg, Germany') }}
+
+                    {{ macros.definition('Gender', 'male') }}
+
+                    {{ macros.definition('Nationality', 'German') }}
+
+                    {% set definition %}
+                        Rotdornweg 15<br />
+                        53177 Bonn<br />
+                        Germany
+                    {% endset %}
+                    {{ macros.definition('Address', definition) }}
+
+                    {{ macros.definition('Phone', '+4916094949894') }}
+
+                    {% set definition %}
+                        <a href="mailto:info@perprogramming.de">info@perprogramming.de</a>
+                    {% endset %}
+                    {{ macros.definition('Email', definition) }}
+                </div>
+
+                <div class="tab-pane fade show" id="professionalExperience">
+                    <h1 class="mb-4">Professional Experience</h1>
+                    {{ macros.events(data.professionalExperience | reverse) }}
+                </div>
+
+                <div class="tab-pane fade show" id="skills">
+                    <h1 class="mb-4">Skills</h1>
+                    {{ macros.definitionList('Methodologies', ['Infrastructure As Code', 'Containers', 'Continuous Integration & Delivery', 'Cloud Computing', 'Software Engineering', 'Test Automatisation', 'Lean & Agile Development', 'Web Development']) }}
+                    {{ macros.definitionList('Techniques', ['Application Frameworks', 'Object-Relational Mapping (ORM)', 'HTTP', 'Web Caching', 'REST', 'API Development', 'SQL', 'CSS', 'OAuth', 'Scrum', 'Kanban']) }}
+                    {{ macros.definitionList('Tools', ['Kubernetes', 'Docker', 'Prometheus', 'Grafana', 'ELK', 'AWS', 'GCP', 'Azure', 'HetznerCloud', 'Terraform', 'Puppet', 'Chef', 'Ansible', 'Ant', 'Linux', 'Git', 'Vagrant', 'Gitlab', 'Bitbucket', 'Bamboo', 'Jira', 'Confluence', 'Solr', 'Varnish', 'Nginx', 'Apache', 'Redis', 'Google Analytics']) }}
+                    {{ macros.definitionList('Programming Languages', ['PHP', 'Java', 'Go', 'Javascript']) }}
+                </div>
+
+                <div class="tab-pane fade show" id="education">
+                    <h1 class="mb-4">Education</h1>
+                    {{ macros.events(data.education | reverse) }}
+                </div>
+
+                <div class="tab-pane fade show" id="furtherEducation">
+                    <h1 class="mb-4">Further Education</h1>
+                    {{ macros.events(data.furtherEducation | reverse) }}
+                </div>
+
+                <div class="tab-pane fade show" id="speaker">
+                    <h1 class="mb-4">Speaker</h1>
+                    {{ macros.events(data.speaker | reverse) }}
+                </div>
+
+                <div class="tab-pane fade show" id="extraProfessionalActivities">
+                    <h1 class="mb-4">Extra-professional Activities</h1>
+                    {{ macros.events(data.extraProfessionalActivities | reverse) }}
+                </div>
+
+                <div class="tab-pane fade show" id="miscellaneous">
+                    <h1 class="mb-4">Miscellaneous</h1>
+                    {{ macros.definitionList('Languages', ['German (native)', 'English (fluent)']) }}
+                    {{ macros.definitionList('Interests', ['Card Games', 'Foosball', 'Hiking', 'Fitness Studio']) }}
+                </div>
+
+                <div class="tab-pane fade show" id="aboutThisPage">
+                    <h1 class="mb-4">About this page</h1>
+                    <p>This page is hosted on <a href="http://pages.github.com/">github:pages</a>.</p>
+                    <p>It has been built using the following tools:</p>
+                    <ul>
+                        <li><a href="http://php.net">PHP</a></li>
+                        <li><a href="http://getsculpin.org">Sculpin</a></li>
+                        <li><a href="http://symfony.com/components">Symfony Components</a></li>
+                        <li><a href="http://getcomposer.org">Composer</a></li>
+                        <li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
+                        <li><a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a></li>
+                    </ul>
+                    <p>The source code can be found <a href="https://github.com/perprogramming/perprogramming-website">on github</a>.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>

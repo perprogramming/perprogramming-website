@@ -1,0 +1,12 @@
+a {
+    color: #5F5F5F;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
+}
+
+#v-pills-tab .active {
+    background-color: #000066;
+}
