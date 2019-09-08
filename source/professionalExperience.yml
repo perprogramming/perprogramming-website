@@ -18,7 +18,7 @@
             title: SIZ webbased audit
             description: Web application for implementing IT security audits in large-scale organisations for our customer SIZ - IT Products and Consulting.
             keywords: [PHP, MySQL, Apache2, IIS, MSSQL, ZendFramework, Doctrine2]
-            url: http://www.siz.de
+            url: https://www.siz.de
             start: 2011
         -
             title: Youthpass
@@ -42,7 +42,7 @@
             title: Golfpost - New Setup on Symfony2
             description:
             keywords: [PHP, MySQL, Apache2, Wordpress => Symfony2]
-            url: http://www.golfpost.de
+            url: https://www.golfpost.de
             start: 2013
 -
     date: 2013 - 2015
@@ -60,14 +60,14 @@
               orchestration solution. We finally decided for Kubernetes and launched our first microservice
               to a production cluster, just days after Kubernetes 1.0 was released in July 2015.
             keywords: [Docker, Fleet, Kubernetes]
-            url: http://www.chefkoch.de
+            url: https://www.chefkoch.de
             start: 2015
         -
             title: Establishing Scrum Methodology
             description: |
               I was part of the first development team at Chefkoch that used Scrum as their new development approach.
             keywords: [Scrum]
-            url: http://www.chefkoch.de
+            url: https://www.chefkoch.de
             start: 2014
         -
             title: Introducing a new REST API for mobile apps
@@ -76,11 +76,11 @@
               We used this API to introduce the Web Application Framework Symfony2 to the company.
               It was also the first project at Chefkoch were automated tests and Continuous Integration were used.
             keywords: [PHP, MariaDB, Nginx, Symfony2, Solr, Doctrine2, Varnish]
-            url: http://www.chefkoch.de
+            url: https://www.chefkoch.de
             start: 2013
 
 -
-    date: 2015 - present
+    date: 2015 - 2019
     title: Software Architect
     location: Chefkoch GmbH, Bonn, Germany
     description: Since I started at chefkoch.de I took part in or led a number of projects and teams in their engineering department. Overall I played a major role in a successful long-term transformation from a slow-iteration software development workflow in a monolithic application running on bare metal towards a rapid CI/CD workflow of microservices running on a kubernetes container cluster.
@@ -95,7 +95,7 @@
               monitoring and logging setup based on Filebeat, Prometheus, Grafana and ElasticStack (ELK).
               We are currently looking into how cloud computing can further improve our operations.
             keywords: [Kubernetes, Docker, Docker-Compose, ELK, Prometheus, Ansible]
-            url: http://www.chefkoch.de
+            url: https://www.chefkoch.de
             start: 2018
         -
             title: Introducing Google Analytics
@@ -108,7 +108,7 @@
               approach to ensure complete test coverage of all mapping logic. Se setup also included a logging solution
               enabling us to see any mapping errors happening within the browser of our users.
             keywords: [JavaScript, Google Analytics, Docker, Kubernetes, ELK]
-            url: http://www.chefkoch.de/
+            url: https://www.chefkoch.de/
             start: 2017
         -
             title: Migrating a self-written CMS to an open-source solution (Drupal)
@@ -120,5 +120,19 @@
               cluster in about 11 month. As Drupal is quite slow performance-wise, the setup included sophisticated
               caching based on Redis (backend) and Varnish (HTTP).
             keywords: [PHP, Drupal, MariaDB, Varnish, Redis, Kubernetes, Docker]
-            url: http://www.chefkoch.de/magazin/
+            url: https://www.chefkoch.de/magazin/
             start: 2016
+
+-
+  date: 2019 - present
+  title: Staff Software Engineer
+  location: LeanIX GmbH, Bonn, Germany
+  description: In 2019 I joined LeanIX to be part of the platform operations team.
+  projects:
+    -
+      title: Platform Operations
+      description: |
+        We make sure our product teams keep running their services on Kubernetes in Azure.
+      keywords: [Azure Cloud, Kubernetes, Docker, Java, Dropwizard, Angular, Kafka, Elasticsearch, Ansible]
+      url: https://www.leanix.net
+      start: 2019
